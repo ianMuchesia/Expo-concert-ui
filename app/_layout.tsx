@@ -1,5 +1,9 @@
 import React, { useEffect } from "react";
-import { Slot } from "expo-router";
+
+//Import global css file
+import "./global.css";
+import { Slot, Stack } from "expo-router";
+
 import { LinearGradient } from "expo-linear-gradient";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
@@ -26,19 +30,7 @@ export default function RootLayout() {
   if (!fontsLoaded) return null;
 
   return (
-    <LinearGradient
-      colors={['rgba(152,46,15,1)', 'rgba(83,34,12,1)', 'rgba(28,17,2,1)']}
-      style={styles.container}
-      start={{ x: 0, y: 0 }}
-      end={{ x: 1, y: 1 }}
-    >
-      <Slot />
-    </LinearGradient>
+  <Stack screenOptions={{ headerShown: false }}/>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});

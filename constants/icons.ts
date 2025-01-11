@@ -31,8 +31,16 @@ import swim from "@/assets/icons/swim.png";
 import wifi from "@/assets/icons/wifi.png";
 import location from "@/assets/icons/location.png";
 import edit from "@/assets/icons/edit.png";
+import video from "@/assets/icons/youtube.png";
+import music from "@/assets/icons/musical-note.png";
+import message from "@/assets/icons/email.png";
+import share from "@/assets/icons/share.png";
 
 export default {
+  video,
+  music,
+  message,
+  share,
   google,
   home,
   search,
